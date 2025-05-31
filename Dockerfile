@@ -35,4 +35,5 @@ else wget -qO mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/${
 fi
 
 # 启动 mihomo，可手动后台启动 Flask
-ENTRYPOINT ["/usr/local/bin/mihomo", "-d", "/root/.config/mihomo"]
+#ENTRYPOINT ["/usr/local/bin/mihomo", "-d", "/root/.config/mihomo"]
+ENTRYPOINT ["/bin/sh", "-c", "/usr/local/bin/mihomo -d /root/.config/mihomo & python3 /root/.config/mihomo/mihomo-new.py"]
