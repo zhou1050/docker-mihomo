@@ -1,7 +1,7 @@
 
 FROM alpine:latest
 
-LABEL maintainer="Izumiko <yosoro@outlook.com>"
+LABEL maintainer="z1050"
 
 ARG TARGETOS=linux
 ARG TARGETARCH=amd64
